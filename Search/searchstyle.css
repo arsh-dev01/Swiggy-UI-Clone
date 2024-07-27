@@ -1,0 +1,100 @@
+main {
+  padding: 2% 4%;
+}
+.searchsection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 10vh;
+  padding: 0 3%;
+}
+.searchsection .section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 7vh;
+  border: 1px solid gray;
+  box-shadow: 0 0 5px gray;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.searchsection input {
+  border: none;
+  width: 100%;
+  padding-left: 2%;
+  height: 6vh;
+}
+.searchsection input:focus {
+  outline: none;
+}
+.searchsection input::placeholder {
+  font-size: 0.9rem;
+}
+.searchsection button {
+  background-color: white;
+  border: none;
+  padding: 1.2% 1%;
+}
+.Popular {
+  width: 100%;
+  height: 20vh;
+  padding: 2%;
+}
+main .Popular .imagesection {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  white-space: nowrap;
+}
+main .Popular .imagesection img {
+  cursor: pointer;
+  width: 8%;
+}
+main .Popular .imagesection img:hover {
+  transform: scale(0.95);
+}
+.itemsection {
+  /* border: 2px solid; */
+  margin-top: 2%;
+  display: grid;
+  gap: 5%;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  height: 140vh;
+  padding: 0 2%;
+  margin-bottom: 3%;
+}
+.itemsection .box {
+  cursor: pointer;
+  /* border: 2px solid; */
+  box-shadow: 0 0 2px gray;
+  display: flex;
+  align-items: center;
+}
+.itemsection .box:hover {
+  box-shadow: 0 0 4px gray;
+  transform: scale(0.99);
+}
+.itemsection .box img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 1rem;
+  box-shadow: 0 0 5px gray;
+  margin-right: 1%;
+}
+.itemsection .box div {
+  display: grid;
+  place-content: center;
+}
+.itemsection .box div h3 {
+  font-size: 0.9rem;
+}
+.itemsection .box div h4 {
+  margin-top: 1%;
+  font-size: 0.7rem;
+  font-style: normal;
+}

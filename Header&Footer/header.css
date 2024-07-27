@@ -1,0 +1,90 @@
+@font-face {
+  font-family: arshnoor;
+  src: url(../Font/Ubuntu-Regular.ttf);
+}
+:root {
+  --Lightorange: #ffa700;
+  --Orange: #fc8019;
+  --headerHeight: 70px;
+}
+::-webkit-scrollbar {
+  visibility: hidden;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: arshnoor;
+  transition: 0.2s all;
+  text-decoration: none;
+}
+header {
+  position: relative;
+  width: 100%;
+  height: var(--headerHeight);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* box-shadow: 2px 2px 3px gray; */
+}
+header .logo {
+  width: 40%;
+}
+header .left {
+  width: 20%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
+header .left select {
+  border: none;
+  outline: none;
+  width: 30%;
+  text-underline-offset: 3px;
+  text-decoration: underline;
+}
+header .left select:hover {
+  cursor: pointer;
+  color: var(--Lightorange);
+}
+header nav {
+  width: 65%;
+  padding: 0 2%;
+}
+header nav ul {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+header nav ul li {
+  cursor: pointer;
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 2%;
+  width: 11%;
+  position: relative;
+}
+header nav ul li a {
+  color: #686b78;
+}
+header nav ul li:first-child {
+  width: 22%;
+}
+header nav ul li a:hover {
+  color: var(--Lightorange);
+}
+header nav ul li:active {
+  transform: scale(0.98);
+}
+header nav ul li .subtext {
+  position: absolute;
+  top: -0.7rem;
+  right: -1.05rem;
+  color: var(--Lightorange);
+  font-size: 0.7rem;
+  font-weight: bolder;
+}
