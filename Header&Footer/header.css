@@ -10,6 +10,13 @@
 ::-webkit-scrollbar {
   visibility: hidden;
 }
+img {
+  object-fit: cover;
+  width: 100%;
+}
+main {
+  min-height: 100vh;
+}
 * {
   margin: 0;
   padding: 0;
@@ -17,6 +24,7 @@
   font-family: arshnoor;
   transition: 0.2s all;
   text-decoration: none;
+  /* border: none; */
 }
 header {
   position: relative;
@@ -25,6 +33,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #fff;
   /* box-shadow: 2px 2px 3px gray; */
 }
 header .logo {
@@ -45,7 +54,7 @@ header .left select {
 }
 header .left select:hover {
   cursor: pointer;
-  color: var(--Lightorange);
+  color: var(--Orange);
 }
 header nav {
   width: 65%;

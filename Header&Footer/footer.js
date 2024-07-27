@@ -1,6 +1,6 @@
 let FooterHTML = `
       <div class="box1">
-        <img src="../logo.png" alt="" width="80px" />
+        <img src="../logo.png" alt=""  />
         <h2>Swiggy</h2>
         <h5>@2024 Technology Pvt.Ltd</h5>
       </div>

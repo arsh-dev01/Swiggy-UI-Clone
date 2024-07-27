@@ -1,5 +1,8 @@
-header {
-  box-shadow: 0 0 4px var(--Lightorange);
+button {
+  border-radius: 0.2rem;
+}
+body {
+  background-color: #ffffed;
 }
 .body {
   width: 100%;
@@ -7,6 +10,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #fff;
 }
 .body .centerCard {
   width: 30%;
@@ -20,7 +24,7 @@ header {
   margin-bottom: 5%;
 }
 .body .centerCard h4,
-h5 {
+.body .centerCard h5 {
   margin-bottom: 2%;
   color: #535665;
 }
@@ -38,20 +42,90 @@ h5 {
 }
 .track {
   width: 100%;
-  height: 100vh;
-  border: 2px solid;
+  height: 92vh;
+  padding: 5%;
 }
 .track div.left {
   float: left;
-  width: 60vw;
+  width: 50vw;
   overflow: hidden;
+}
+.track .topseciton {
+  background-color: #fff;
+  display: flex;
+  color: #26282e;
+  padding: 3%;
+  gap: 4%;
+  margin-bottom: 8%;
+}
+.track .topseciton .image {
+  background-color: #282c3f;
+  width: 3vw;
+  height: 3vw;
+  padding-left: 0.5%;
+  padding-top: 0.5%;
+  border-radius: 0.2rem;
+}
+.track .topseciton .image img {
+  width: 100%;
+}
+.track .topseciton h5 {
+  margin-bottom: 3%;
+}
+.track .topseciton button {
+  padding: 2% 7%;
+  color: #fff;
+  background-color: var(--Orange);
+  border: 1px solid gray;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.track .second {
+  margin-top: 5%;
+}
+.track .second .image {
+  width: 8%;
+  height: 8%;
+}
+.track .second h5 {
+  margin-bottom: 1%;
+}
+.track .second span {
+  margin-bottom: 5%;
+  font-size: 0.8rem;
+}
+.track .second button {
+  margin-top: 6%;
+}
+.track .second .Login {
+  margin-right: 7%;
+  background-color: transparent;
+  color: #4caf48;
+  border: 1px solid #5fd15b;
+}
+.track .second .Sign {
+  background-color: #5fd15b;
+  border: none;
+}
+.therd h4,
+.fouth h4 {
+  color: #7e808c;
 }
 .track div.right {
   padding: 3%;
-  border: 2px solid;
   width: 35vw;
   height: 100%;
   float: right;
+}
+.right h2 {
+  margin-bottom: 15%;
+  color: #7e808c;
+}
+.right h6 {
+  margin-top: 5%;
+  color: #7e808c;
+  font-size: 0.8rem;
+  width: 53%;
 }
 .track div.right img {
   width: 200px;
