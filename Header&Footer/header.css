@@ -3,12 +3,15 @@
   src: url(../Font/Ubuntu-Regular.ttf);
 }
 :root {
-  --Lightorange: #ffa700;
+  --LightOrange: #ffa700;
   --Orange: #fc8019;
-  --headerHeight: 70px;
+  --headerHeight: 75px;
 }
 ::-webkit-scrollbar {
   visibility: hidden;
+}
+button {
+  cursor: pointer;
 }
 img {
   object-fit: cover;
@@ -27,6 +30,7 @@ main {
   /* border: none; */
 }
 header {
+  padding-top: 1%;
   position: relative;
   width: 100%;
   height: var(--headerHeight);
@@ -35,6 +39,11 @@ header {
   align-items: center;
   background-color: #fff;
   /* box-shadow: 2px 2px 3px gray; */
+}
+header div.left select#location {
+  position: relative;
+  bottom: 35%;
+  left: 5%;
 }
 header .logo {
   width: 40%;
@@ -66,6 +75,7 @@ header nav ul {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  padding-left: 12%;
 }
 header nav ul li {
   cursor: pointer;
@@ -84,7 +94,7 @@ header nav ul li:first-child {
   width: 22%;
 }
 header nav ul li a:hover {
-  color: var(--Lightorange);
+  color: var(--LightOrange);
 }
 header nav ul li:active {
   transform: scale(0.98);
@@ -93,7 +103,7 @@ header nav ul li .subtext {
   position: absolute;
   top: -0.7rem;
   right: -1.05rem;
-  color: var(--Lightorange);
+  color: var(--LightOrange);
   font-size: 0.7rem;
   font-weight: bolder;
 }

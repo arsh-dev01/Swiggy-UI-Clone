@@ -1,0 +1,86 @@
+/* Singup Section */
+.SingBody {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #47474793;
+  display: none;
+}
+.singup {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: white;
+  width: 35vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.singup .icon {
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  left: 8px;
+  font-weight: bolder;
+  font-style: normal;
+  border-radius: 50%;
+  padding: 6px 10px;
+}
+.singup .top {
+  margin-top: 30px;
+}
+.hadding {
+  width: 50%;
+}
+.singup .hadding h1 {
+  margin-bottom: 2vh;
+}
+.singup .hadding h6 {
+  font-size: 0.8rem;
+}
+.singup .hadding h6 span {
+  margin-left: 4%;
+  color: var(--Orange);
+}
+.singup img {
+  width: 100px;
+}
+.singup .top {
+  width: 77%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5vh;
+}
+.singup .number {
+  width: 90%;
+  height: 8vh;
+  padding-left: 5%;
+  font-size: 1.2rem;
+}
+.singup .number::placeholder {
+  font-size: 0.9rem;
+}
+.singup .bottom {
+  width: 65%;
+}
+.singup .bottom button {
+  display: block;
+  width: 90%;
+  height: 6vh;
+  background-color: var(--Orange);
+  margin-top: 3vh;
+  margin-bottom: 1vh;
+  border: none;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  color: white;
+}
+.singup .bottom span {
+  font-size: 0.8rem;
+  width: 20px;
+  word-wrap: break-word;
+}

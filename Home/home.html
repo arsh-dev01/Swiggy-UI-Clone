@@ -2,7 +2,6 @@
 <html>
   <head>
     <link rel="stylesheet" href="homestyle.css" />
-
     <title>Home</title>
   </head>
 
@@ -782,10 +781,24 @@
           </div>
         </div>
       </div>
+      <div class="SingBody"></div>
     </main>
-    <footer>
-    </footer>
+    <footer></footer>
   </body>
   <script src="../Header&Footer/header.js"></script>
   <script src="../Header&Footer/footer.js"></script>
+  <script src="../SignUp/signup.js"></script>
+  <script>
+    let singup = document.querySelector(".singBtn");
+    console.log(singup);
+
+    singup.addEventListener("click", () => {
+      document.querySelector(".SingBody").style.display = "flex";
+    });
+    let CancelBtn = document.querySelector(".icon");
+    console.log(CancelBtn);
+    CancelBtn.addEventListener("click", (e) => {
+      document.querySelector(".SingBody").style.display = "none";
+    });
+  </script>
 </html>
