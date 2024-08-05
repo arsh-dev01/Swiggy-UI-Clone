@@ -1,6 +1,6 @@
 main {
   width: 100vw;
-  height: min-content;
+  /* height: min-content; */
   background-color: rgb(38, 110, 128);
   padding-top: 8%;
   padding-left: 5%;
@@ -81,6 +81,4 @@ div.right ul select {
   border-bottom: 1px solid #ccc;
   color: #383131;
   width: 100%;
-}
-select:active {
 }

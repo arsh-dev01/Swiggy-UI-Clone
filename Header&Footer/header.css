@@ -17,9 +17,6 @@ img {
   object-fit: cover;
   width: 100%;
 }
-main {
-  min-height: 100vh;
-}
 * {
   margin: 0;
   padding: 0;

@@ -60,13 +60,16 @@ body {
 }
 .track .topseciton .image {
   background-color: #282c3f;
-  width: 3vw;
-  height: 3vw;
-  padding-left: 0.5%;
-  padding-top: 0.5%;
+  width: 3.5vw;
+  height: 3.5vw;
+  /* padding-left: 0.5%; */
+  /* padding-top: 0.5%; */
   border-radius: 0.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.track .topseciton .image img {
+.track .topseciton .image svg {
   width: 100%;
 }
 .track .topseciton h5 {

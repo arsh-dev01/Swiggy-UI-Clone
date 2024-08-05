@@ -6,6 +6,9 @@ footer {
   /* align-items: center; */
   justify-content: space-evenly;
   color: #dadada;
+  position: relative;
+  bottom: 0;
+  left: 0;
 }
 footer img {
   width: 80px;
