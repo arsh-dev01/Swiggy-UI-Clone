@@ -13,8 +13,8 @@ searchBox.addEventListener("keypress", () => {
     clearTimeout(typingTimer);
   });
   typingTimer = setTimeout(() => {
-    console.log("arshnoor");
-  }, 400);
+    foo();
+  }, 600);
 });
 searchBox.addEventListener("change", () => {
   if (searchBox.value == "") {
@@ -34,47 +34,28 @@ cancelIcon.addEventListener("click", () => {
   }
 });
 
-//   let ser = await fetch()
-//     .then((res) => res.json())
-//     .then((res) => res);
+let obj;
+async function foo() {
+  let ULR = `https://themealdb.com/api/json/v1/1/search.php?s=+${searchBox.value}`;
+  // let ULR = "../hello.json";
+  const res = await fetch(ULR);
+  console.log("Funciton calling");
 
-//   // console.log(User.meals);
-// name();
+  obj = await res.json();
+  console.log(obj);
 
-// let ULR = "https://themealdb.com/api/json/v1/1/search.php?s=+cake";
-let ULR = "../hello.json";
+  obj.meals.forEach((element) => {
+    console.log(element["strMealThumb"]);
+    console.log(element["strMeal"]); //Title
+    console.log(element["strCategory"]); //Type
+    GenratingElementandAppend(
+      element["strMealThumb"],
+      element["strMeal"],
+      element["strCategory"]
+    );
+  });
+}
 
-// let name = async () => {
-//   fetch(``)
-//     .then((response) => response.json())
-//     .then((data) => {
-//       outsideVariable = await data;
-//     });
-// };
-// console.log(outsideVariable);
-// name();
-
-// let obj;
-// async function foo() {
-//   const res = await fetch(ULR);
-//   console.log("Funciton calling");
-
-//   obj = await res.json();
-//   console.log(obj);
-
-//   obj.meals.forEach((element) => {
-//     console.log(element["strMealThumb"]);
-//     console.log(element["strMeal"]); //Title
-//     console.log(element["strCategory"]); //Type
-//     GenratingElementandAppend(
-//       element["strMealThumb"],
-//       element["strMeal"],
-//       element["strCategory"]
-//     );
-//   });
-// }
-
-// foo();
 function GenratingElementandAppend(ImageURL, title, type) {
   // Createing Element
   let div = document.createElement("div");
@@ -97,25 +78,4 @@ function GenratingElementandAppend(ImageURL, title, type) {
   Container.appendChild(h4);
   // all Element are Appending
   document.querySelector(".itemsection").appendChild(div);
-}
-const url = "https://food-recipes-with-images.p.rapidapi.com/?q=chicken%20soup";
-const options = {
-  method: "GET",
-  headers: {
-    "x-rapidapi-key": "01e7d3480dmsh8834eb182ee9e10p17b151jsn6122324cda2f",
-    "x-rapidapi-host": "food-recipes-with-images.p.rapidapi.com",
-  },
-};
-
-try {
-  let obj;
-  async function foo() {
-    const res = await fetch(url, options);
-    console.log("Funciton calling");
-    obj = await res.json();
-    console.log(obj);
-  }
-  foo();
-} catch (error) {
-  console.error(error);
 }
